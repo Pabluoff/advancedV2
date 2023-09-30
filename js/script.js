@@ -1,4 +1,5 @@
 // Função para verificar o email e realizar o login
+function verificarEmail() {
     const emailInput = document.getElementById('email');
     const emailValue = emailInput.value.trim();
     const loginButton = document.getElementById('login-button');
@@ -34,6 +35,7 @@
         }, 3000);
     }
 }
+
 
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -340,6 +342,3 @@ window.addEventListener("click", function (event) {
         closeModal(event.target.id);
     }
 });
-
-
-
