@@ -1,16 +1,36 @@
 // Função para verificar o email e realizar o login
-function verificarEmail() {
     const emailInput = document.getElementById('email');
     const emailValue = emailInput.value.trim();
+    const loginButton = document.getElementById('login-button');
+    const loading = document.querySelector('.loading');
+    const loginText = document.getElementById('login-text');
+    const arrowIcon = loginButton.querySelector('i'); // Seleciona o ícone
 
     if (emailValue === '' || !isValidEmail(emailValue)) {
         exibirNotificacao('Por favor, insira um e-mail válido.');
     } else {
+        loginText.style.visibility = 'hidden'; 
+        loading.style.display = 'block';
+
+        arrowIcon.style.visibility = 'hidden';
+
+        loginButton.classList.add('loading-active');
+
         localStorage.setItem('email', emailValue);
 
-        exibirNotificacaoSucesso('Seu login foi realizado com sucesso!');
         setTimeout(function () {
-            window.location.href = '/html/home.html';
+            exibirNotificacaoSucesso('Seu login foi realizado com sucesso!');
+            setTimeout(function () {
+                window.location.href = '/html/home.html';
+            }, 3000);
+
+            loginText.style.visibility = 'visible'; 
+            
+            arrowIcon.style.visibility = 'visible';
+
+            loading.style.display = 'none';
+
+            loginButton.classList.remove('loading-active');
         }, 3000);
     }
 }
