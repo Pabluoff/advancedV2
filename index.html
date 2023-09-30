@@ -20,7 +20,9 @@
             <p class="subtitle">Insira o e-mail usado na compra.</p>
             <input type="email" id="email" class="custom-input" placeholder="Digite seu e-mail">
             <button id="login-button" class="custom-button" onclick="verificarEmail()">
-                ENTRAR <i class="fas fa-thin fa-arrow-right"></i>
+                <span id="login-text">ENTRAR</span>
+                <div class="loading"></div>
+                <i class="fas fa-thin fa-arrow-right"></i>
             </button>
             <p class="create-account">Ainda não tem conta?</p>
             <button id="create-account-button" class="custom-button create-account-button" onclick="abrirNovaJanela()">
