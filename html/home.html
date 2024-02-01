@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" id="favicon" href="/img/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <span class="navbar-brand">Início</span>
+        </div>
+        <div class="navbar-icons">
+            <div class="share-icon">
+                <i class="fa-regular fa-clipboard fa-lg"></i>
+                <div class="share-dropdown" id="share-dropdown">
+                    <a href="#" id="copy-link">Copiar Link</a>
+                    <a href="#" id="share-whatsapp">Compartilhar no WhatsApp</a>
+                    <a href="#" id="share-twitter">Compartilhar no Twitter ( 𝕏 )</a>
+                </div>
+            </div>
+            <div class="copy-success-message" style="display: none;">Link copiado para a área de transferência!</div>
+            <div id="notifications-icon">
+                <i class="fa-regular fa-bell"></i>
+                <span class="notification-badge" id="notification-badge">1</span>
+                <div class="notification-dropdown">
+                    <div class="notification-item">
+                        <img src="/img/user.webp" alt="Logo do aplicativo" class="notification-logo">
+                        <p>
+                            <a href="https://go.aff.7k-partners.com/oacgp5e6" class="notification-link">
+                                <span class="notification-text">Bônus 100% do depósito em casino</span>
+                                <span class="notification-highlight">Saiba Mais</span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="clear-notification">
+                        <i id="close-dropdown" class="fas fa-times"></i>
+                        <a href="#" id="clear-notification">Limpar notificações</a>
+                    </div>
+                </div>
+            </div>
+            <div class="user-dropdown">
+                <img src="/img/user.webp" alt="Foto do usuário" class="user-avatar" id="user-avatar">
+                <div class="user-dropdown-content" id="user-dropdown-content">
+                    <span id="user-email"></span>
+                    <hr class="divider">
+                    <a href="#" id="logout">Encerrar sessão</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-container">
+        <div class="slider" id="slider"></div>
+    </div>
+    <div class="content center-content">
+        <div class="game-section">
+            <div class="game-header">
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Jogos Disponíveis</h2>
+            </div>
+            <div class="game-grid center-content">
+                <div class="game">
+                    <a href="/html/mines.html">
+                        <img src="/img/mines.jpg" alt="Jogo">
+                    </a>
+                </div>
+
+                <div class="game">
+                    <a href="/html/spaceman.html">
+                        <img src="/img/SpaceMan.jpg" alt="Jogo">
+                    </a>
+                </div>
+
+                <div class="game">
+                    <a href="/html/piggy.html">
+                        <img src="/img/piggy.png" alt="Jogo">
+                    </a>
+                </div>
+
+                <div class="game">
+                    <a href="/html/aviator.html">
+                        <img src="/img/Aviator.jpg" alt="Jogo">
+                    </a>
+                </div>
+
+                <div class="game">
+                    <a href="/html/rabbit.html">
+                        <img src="/img/FortuneRabitt.jpeg" alt="Jogo">
+                    </a>
+                </div>
+                <div class="game">
+                    <a href="/html/Penalty.html">
+                        <img src="/img/football.jpg" alt="Jogo">
+                    </a>
+                </div>
+
+                <div class="game">
+                    <a href="/html/crash.html">
+                        <img src="/img/Crash.png" alt="Jogo">
+                    </a>
+                </div>
+
+                <div class="game">
+                    <a href="/html/mouse.html">
+                        <img src="/img/fortuneMouse.jpg" alt="Jogo">
+                    </a>
+                </div>
+
+                <div class="game">
+                    <a href="/html/OX.html">
+                        <img src="/img/fortuneOX.png" alt="Jogo">
+                    </a>
+                </div>
+
+                <div class="game">
+                    <a href="/html/Tiger.html">
+                        <img src="/img/fortuneTiger.png" alt="Jogo">
+                    </a>
+                </div>
+
+                <div class="game">
+                    <a href="#">
+                        <img src="/img/BRC.jpg" alt="Jogo">
+                    </a>
+                </div>
+
+                <div class="game">
+                    <a href="#">
+                        <img src="/img/CrazyTime.jpg" alt="Jogo">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content-download center-content">
+        <div class="download-section">
+            <div class="download-header">
+                <i class="fa-solid fa-circle-down"></i>
+                <h2>Instalação do App</h2>
+            </div>
+        </div>
+    </div>
+    <div class="center-download">
+        <div class="download-container" id="ios-container">
+            <i class="fa-brands fa-apple"></i>
+            <p>Apple (iOS)</p>
+        </div>
+        <div class="download-container" id="android-container">
+            <i class="fa-brands fa-android"></i>
+            <p>Android</p>
+        </div>
+    </div>
+
+    <!-- Modal para Android -->
+    <div id="android-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Instalação Android</h2>
+            <p>Siga as etapas abaixo para instalar o aplicativo corretamente no seu smartphone Android:</p>
+            <ol>
+                <li class="step">
+                    <div class="step-number">1</div>
+                    Clique no ícone de "Mais opções" no canto superior direito.
+                </li>
+                <li class="step">
+                    <div class="step-number">2</div>
+                    Depois, clique em "Instalar Aplicativo" ou "Adicionar à tela Inicial".
+                </li>
+                <li class="step">
+                    <div class="step-number">3</div>
+                    Confirme a ação clicando em "Instalar" no pop-up que aparece na tela.
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Modal para iOS -->
+    <div id="ios-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Instalação iOS</h2>
+            <p>Siga as etapas abaixo para instalar o aplicativo corretamente no seu smartphone iOS:</p>
+            <ol>
+                <li class="step">
+                    <div class="step-number">1</div>
+                    Abra o aplicativo no Safari.
+                </li>
+                <li class="step">
+                    <div class="step-number">2</div>
+                    Clique no ícone de "compartilhamento".
+                </li>
+                <li class="step">
+                    <div class="step-number">3</div>
+                    Clique em "Adicionar à tela de início".
+                </li>
+                <li class="step">
+                    <div class="step-number">4</div>
+                    Clique em "Adicionar" no canto superior direito.
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- MENU -->
+    <div class="bottom-navigation">
+        <a href="#" class="bottom-nav-item home active">
+            <i class="fas fa-home"></i>
+            <span>Inicio</span>
+        </a>
+        <a href="https://go.aff.7k-partners.com/oacgp5e6" class="bottom-nav-item plataforma">
+            <i class="fa-solid fa-question"></i>
+            <span>Plataforma</span>
+        </a>
+        <a href="https://go.aff.7k-partners.com/oacgp5e6" class="bottom-nav-item resultados">
+            <i class="fa-regular fa-circle-check"></i>
+            <span>Resultados</span>
+        </a>
+        <a href="/html/ranking.html" class="bottom-nav-item ranking">
+            <i class="fa-solid fa-medal"></i>
+            <span>Ranking</span>
+        </a>
+        <a href="/html/bonus.html" class="bottom-nav-item bonus">
+            <i class="fa-solid fa-star"></i>
+            <span>Bônus</span>
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
