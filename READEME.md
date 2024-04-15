@@ -1,1 +1,1 @@
-[About](pages/about.md)
+[About](pages/about.html)
