@@ -1,6 +1,6 @@
 defaults:
   - scope:
-      path: ""
-      type: "pages"
+      path: "pages"
     values:
-      permalink: "/:title/"
+      permalink: /:basename
+

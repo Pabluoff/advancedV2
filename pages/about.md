@@ -61,11 +61,9 @@
         </div>
     </div>
     <!-- Fim navbar -->
-
     <div class="notification-status" id="notification-status">
         <p id="notificationStatus-text"><i class="fa-solid fa-check"></i> Sinal encontrado com sucesso!</p>
     </div>
-
     <div class="container dark-theme">
         <div class="space-message">
             <p id="space-text">Executando IA</p>
@@ -85,22 +83,18 @@
             </div>
         </div>
     </div>
-
     <div>
         <p id="Countspace">0 PESSOAS FIZERAM ENTRADA
         </p>
     </div>
-
     <div class="aviso">
         <i class="fas fa-exclamation"></i> O jogo não carregou? <a href="https://go.aff.7k-partners.com/n7wzq7az"
             target="_blank"><i class="fas fa-external-link-alt"></i> Clique aqui</a>
     </div>
-
     <div class="iframe-container">
         <iframe src="https://go.aff.7k-partners.com/n7wzq7az"></iframe>
     </div>
     <div class="separador" style="height:120px;"></div>
-
     <!-- MENU -->
     <div class="bottom-navigation">
         <a href="/html/home.html" class="bottom-nav-item home active">
@@ -124,23 +118,19 @@
             <span>Bônus</span>
         </a>
     </div>
-
     <script>
         function getRandomNumber(min, max) {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
-
         let contadorEntrada = 0;
         let limiteContador = 0;
         const intervaloContador = 1000; 
-
         function atualizarConteudo() {
             const spaceText = document.getElementById("space-text").textContent;
             const protecoesText = document.getElementById("protecoes-text");
             const saidaText = document.getElementById("saida-text");
             const horaText = document.getElementById("hora");
             const countSpace = document.getElementById("Countspace");
-
             if (spaceText === "Executando IA") {
                 protecoesText.textContent = "***";
                 saidaText.textContent = "***";
@@ -152,28 +142,21 @@
                 const minutoFormatado = agora.getMinutes().toString().padStart(2, "0");
                 horaText.textContent = `${horaFormatada}:${minutoFormatado}`;
                 protecoesText.textContent = "3";
-
                 const numeroAleatorio = getRandomNumber(14, 20) / 10;
                 saidaText.textContent = numeroAleatorio.toFixed(1);
-
                 const notificationStatus = document.getElementById("notification-status");
                 notificationStatus.style.top = "10px";
-
                 setTimeout(function () {
                     notificationStatus.style.top = "-100px"; 
                 }, 2000);
-
                 setTimeout(iniciarContadorEntrada, 2000);
-
                 setTimeout(reiniciarHorario, 180000); 
-
                 setTimeout(function () {
                     contadorEntrada = 0;
                     countSpace.textContent = `${contadorEntrada} PESSOAS FIZERAM ENTRADA`;
                 }, 180000);
             }
         }
-
         function iniciarContadorEntrada() {
             const countSpace = document.getElementById("Countspace");
             limiteContador = getRandomNumber(43, 98); 
@@ -190,7 +173,6 @@
                 }
             }, intervaloContador);
         }
-
         function reiniciarHorario() {
             const horaElement = document.getElementById("hora");
             const agora = new Date();
@@ -198,34 +180,26 @@
             const horaFormatada = agora.getHours().toString().padStart(2, "0");
             const minutoFormatado = agora.getMinutes().toString().padStart(2, "0");
             horaElement.textContent = `${horaFormatada}:${minutoFormatado}`;
-
             const spaceText = document.getElementById("space-text");
             spaceText.textContent = "Executando IA";
-
             setTimeout(function () {
                 spaceText.textContent = "Sinal Encontrado!";
                 const protecoesText = document.getElementById("protecoes-text");
                 const saidaText = document.getElementById("saida-text");
                 protecoesText.textContent = "3";
-
                 const numeroAleatorio = getRandomNumber(14, 20) / 10;
                 saidaText.textContent = numeroAleatorio.toFixed(1);
-
                 const notificationStatus = document.getElementById("notification-status");
                 setTimeout(function () {
                     notificationStatus.style.top = "-100px"; 
                 }, 2000);
             }, 4000);
         }
-
         atualizarConteudo();
-
         const targetNode = document.getElementById("space-text");
         const observer = new MutationObserver(atualizarConteudo);
-
         const config = { childList: true, characterData: true, subtree: true };
         observer.observe(targetNode, config);
-
         setTimeout(function () {
             document.getElementById("space-text").textContent = "Sinal Encontrado!";
         }, 4000);
