@@ -12,6 +12,10 @@ body {
 
 }
 
+.markdown-body::before {
+    display: none;
+    content: "";
+}
 
 /* Estilos para a barra de navegação (navbar) */
 .navbar {
