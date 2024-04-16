@@ -273,7 +273,7 @@ $(document).ready(function () {
     });
 
     $("#share-whatsapp").on("click", function () {
-        const shareText = "Você está pronto para transformar seu celular em uma máquina de palpites? Não é segredo que as Inteligências artificiais estão dominando a internet, nosso software de palpites é baseado em IA ( inteligência artificial ) você terá acesso a informações privilegiadas e análises precisas que podem levá-lo à vitória. Clique no link e faça parte do time vencedor. O sucesso espera por você. 🏆" + window.location.href;
+        const shareText = "Você está pronto para transformar seu celular em uma máquina de dinheiro? Não é segredo que as Inteligências artificiais estão dominando a internet, nosso software de palpites é baseado em IA ( inteligência artificial ) você terá acesso a informações privilegiadas e análises precisas que podem levá-lo à vitória. Clique no link e faça parte do time vencedor. O sucesso espera por você. 🏆" + window.location.href;
         const shareURL = "https://api.whatsapp.com/send?text=" + encodeURIComponent(shareText);
         window.open(shareURL, "_blank");
     });
