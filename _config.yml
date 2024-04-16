@@ -4,3 +4,4 @@ defaults:
     values:
       permalink: /:basename
 
+keep_files: []
