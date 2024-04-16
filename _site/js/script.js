@@ -22,7 +22,7 @@ function verificarEmail() {
         setTimeout(function () {
             exibirNotificacaoSucesso('Seu login foi realizado com sucesso!');
             setTimeout(function () {
-                window.location.href = '/Início';
+                window.location.href = '/Inicio';
             }, 1000);
 
             loginText.style.visibility = 'visible'; 
