@@ -9,17 +9,17 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/img/logo.png">
     <link rel="icon" type="image/x-icon" href="/img/logo.png">
     <link rel="stylesheet" href="/css/style.css">
-    <title>piggy</title>
+    <title>OX</title>
 </head>
 
 <body>
     <!-- Inicio nav -->
     <div class="navbar">
         <div class="navbar-left">
-            <a href="/html/home.html">
+            <a href="/Início">
                 <i class="fa-solid fa-arrow-left"></i>
             </a>
-            <span class="navbar-brand">Piggy</span>
+            <span class="navbar-brand" style="font-size: 22px;">Fortune OX</span>
         </div>
         <div class="navbar-icons">
             <div class="share-icon">
@@ -92,18 +92,18 @@
     </div>
 
     <div class="aviso">
-        <i class="fas fa-exclamation"></i> O jogo não carregou? <a href="https://go.aff.7k-partners.com/qaux00so"
+        <i class="fas fa-exclamation"></i> O jogo não carregou? <a href="https://go.aff.7k-partners.com/46lf1nyh"
             target="_blank"><i class="fas fa-external-link-alt"></i> Clique aqui</a>
     </div>
 
     <div class="iframe-container">
-        <iframe src="https://go.aff.7k-partners.com/qaux00so"></iframe>
+        <iframe src="https://go.aff.7k-partners.com/46lf1nyh"></iframe>
     </div>
     <div class="separador" style="height:120px;"></div>
 
     <!-- MENU -->
     <div class="bottom-navigation">
-        <a href="/html/home.html" class="bottom-nav-item home active">
+        <a href="/Início" class="bottom-nav-item home active">
             <i class="fas fa-home"></i>
             <span>Inicio</span>
         </a>
@@ -115,101 +115,101 @@
             <i class="fa-regular fa-circle-check"></i>
             <span>Resultados</span>
         </a>
-        <a href="/html/ranking.html" class="bottom-nav-item ranking">
+        <a href="/Ranking" class="bottom-nav-item ranking">
             <i class="fa-solid fa-medal"></i>
             <span>Ranking</span>
         </a>
-        <a href="/html/bonus.html" class="bottom-nav-item bonus">
+        <a href="/Bônus" class="bottom-nav-item bonus">
             <i class="fa-solid fa-star"></i>
             <span>Bônus</span>
         </a>
     </div>
 
     <script>
-            function atualizarConteudo() {
-                const normalText = document.getElementById("normal-text");
-                const turboText = document.getElementById("turbo-text");
-                const horaText = document.getElementById("hora");
-                const spaceText = document.getElementById("space-text");
-                const countSpace = document.getElementById("Countspace");
+        function atualizarConteudo() {
+            const normalText = document.getElementById("normal-text");
+            const turboText = document.getElementById("turbo-text");
+            const horaText = document.getElementById("hora");
+            const spaceText = document.getElementById("space-text");
+            const countSpace = document.getElementById("Countspace");
 
-                if (spaceText.textContent === "Executando IA") {
-                    normalText.textContent = "***";
-                    turboText.textContent = "***";
-                    horaText.textContent = "***";
-                    countSpace.textContent = "0 PESSOAS FIZERAM ENTRADA"; // Zera o Countspace
-                } else if (spaceText.textContent === "Sinal Encontrado!") {
-                    // Gerar números aleatórios entre 4 e 10
-                    const numeroAleatorio = Math.floor(Math.random() * (10 - 4 + 1)) + 4;
+            if (spaceText.textContent === "Executando IA") {
+                normalText.textContent = "***";
+                turboText.textContent = "***";
+                horaText.textContent = "***";
+                countSpace.textContent = "0 PESSOAS FIZERAM ENTRADA"; // Zera o Countspace
+            } else if (spaceText.textContent === "Sinal Encontrado!") {
+                // Gerar números aleatórios entre 4 e 10
+                const numeroAleatorio = Math.floor(Math.random() * (10 - 4 + 1)) + 4;
 
-                    normalText.textContent = numeroAleatorio;
-                    turboText.textContent = numeroAleatorio;
+                normalText.textContent = numeroAleatorio;
+                turboText.textContent = numeroAleatorio;
 
-                    // Recupera a hora atual com 3 minutos adiantados
-                    const agora = new Date();
-                    agora.setMinutes(agora.getMinutes() + 3);
-                    const horaFormatada = agora.getHours().toString().padStart(2, "0");
-                    const minutoFormatado = agora.getMinutes().toString().padStart(2, "0");
-                    horaText.textContent = `${horaFormatada}:${minutoFormatado}`;
-
-                    // Chama a função para mostrar a notificação
-                    mostrarNotificacao();
-
-                    // Chama a função para aumentar gradativamente o número
-                    aumentarGradativamente();
-                }
-            }
-
-            function mostrarNotificacao() {
-                const notificationStatus = document.getElementById("notification-status");
-                notificationStatus.style.top = "20px"; // Mostra a notificação
-                setTimeout(function () {
-                    notificationStatus.style.top = "-100px"; // Esconde a notificação após 2 segundos
-                }, 2000);
-            }
-
-            function aumentarGradativamente() {
-                const countSpace = document.getElementById("Countspace");
-                let numeroAtual = parseInt(countSpace.textContent, 10) || 0;
-                const maximo = Math.floor(Math.random() * (98 - 43 + 1)) + 43;
-
-                const interval = setInterval(function () {
-                    if (numeroAtual < maximo) {
-                        const incremento = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
-                        numeroAtual = Math.min(numeroAtual + incremento, maximo);
-                        countSpace.textContent = `${numeroAtual} PESSOAS FIZERAM ENTRADA`;
-                    } else {
-                        clearInterval(interval);
-                    }
-                }, 2000);
-            }
-
-            function atualizarHorario() {
-                const horaElement = document.getElementById("hora");
+                // Recupera a hora atual com 3 minutos adiantados
                 const agora = new Date();
-                agora.setMinutes(agora.getMinutes() + 3); // Adiciona 3 minutos
+                agora.setMinutes(agora.getMinutes() + 3);
                 const horaFormatada = agora.getHours().toString().padStart(2, "0");
                 const minutoFormatado = agora.getMinutes().toString().padStart(2, "0");
-                horaElement.textContent = `${horaFormatada}:${minutoFormatado}`;
+                horaText.textContent = `${horaFormatada}:${minutoFormatado}`;
 
-                const spaceText = document.getElementById("space-text");
-                spaceText.textContent = "Executando IA";
+                // Chama a função para mostrar a notificação
+                mostrarNotificacao();
 
-                // Chama a função para atualizar o conteúdo quando a hora é atualizada
-                atualizarConteudo();
-
-                setTimeout(function () {
-                    spaceText.textContent = "Sinal Encontrado!";
-                    // Restaura o conteúdo original dos elementos quando o texto é "Sinal Encontrado!"
-                    atualizarConteudo();
-                }, 4000); // Altera para "Sinal Encontrado!" após 4 segundos
+                // Chama a função para aumentar gradativamente o número
+                aumentarGradativamente();
             }
+        }
 
-            // Chama a função inicialmente para configurar o horário
-            atualizarHorario();
+        function mostrarNotificacao() {
+            const notificationStatus = document.getElementById("notification-status");
+            notificationStatus.style.top = "20px"; // Mostra a notificação
+            setTimeout(function () {
+                notificationStatus.style.top = "-100px"; // Esconde a notificação após 2 segundos
+            }, 2000);
+        }
 
-            // Atualiza o horário a cada 3 minutos (180000 milissegundos = 3 minutos)
-            setInterval(atualizarHorario, 180000);
+        function aumentarGradativamente() {
+            const countSpace = document.getElementById("Countspace");
+            let numeroAtual = parseInt(countSpace.textContent, 10) || 0;
+            const maximo = Math.floor(Math.random() * (98 - 43 + 1)) + 43;
+
+            const interval = setInterval(function () {
+                if (numeroAtual < maximo) {
+                    const incremento = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+                    numeroAtual = Math.min(numeroAtual + incremento, maximo);
+                    countSpace.textContent = `${numeroAtual} PESSOAS FIZERAM ENTRADA`;
+                } else {
+                    clearInterval(interval);
+                }
+            }, 2000);
+        }
+
+        function atualizarHorario() {
+            const horaElement = document.getElementById("hora");
+            const agora = new Date();
+            agora.setMinutes(agora.getMinutes() + 3); // Adiciona 3 minutos
+            const horaFormatada = agora.getHours().toString().padStart(2, "0");
+            const minutoFormatado = agora.getMinutes().toString().padStart(2, "0");
+            horaElement.textContent = `${horaFormatada}:${minutoFormatado}`;
+
+            const spaceText = document.getElementById("space-text");
+            spaceText.textContent = "Executando IA";
+
+            // Chama a função para atualizar o conteúdo quando a hora é atualizada
+            atualizarConteudo();
+
+            setTimeout(function () {
+                spaceText.textContent = "Sinal Encontrado!";
+                // Restaura o conteúdo original dos elementos quando o texto é "Sinal Encontrado!"
+                atualizarConteudo();
+            }, 4000); // Altera para "Sinal Encontrado!" após 4 segundos
+        }
+
+        // Chama a função inicialmente para configurar o horário
+        atualizarHorario();
+
+        // Atualiza o horário a cada 3 minutos (180000 milissegundos = 3 minutos)
+        setInterval(atualizarHorario, 180000);
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/js/script.js"></script>
