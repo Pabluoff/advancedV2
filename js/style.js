@@ -1,50 +1,47 @@
 // Sem style of animation
 // =================================
-// This file is just a barebones example to get you started. You can add your own styles and classes to it.
+
+// This file is just a barebones example to get you started. You can add your own styles and classes to
+
 // Feel free to delete this comment as  soon as you find out what you are doing with the code.
 // =================================================
 
-var inviDiv1 = document.createElement("div");
-(function () {
-    var x = 0;
-    for (var i = 0; i < 1000000; i++) {
-        x += Math.random();
-    }
-})();
+///(The Star-Spangled Banner" is the national anthem of the United States. The lyrics come from the
 
 
-var inviDiv1 = document.createElement("div");
-var inviText1 = document.createTextNode("");
-inviDiv1.appendChild(inviText1);
-
-(function () {
-    var x = 0;
-    for (var i = 0; i < 1000; i++) {
-        x += Math.random();
-    }
-})();
-
-inviDiv1.style.display = "none";
-inviDiv2.style.display = "none";
-
-document.body.appendChild(inviDiv1);
-document.body.appendChild(inviDiv2);
+// "Defence of Fort M'Henry",[2] a poem written by Francis Scott Key, a 35-year-old lawyer and amateur poet,
+//on September 14, 1814, after he witnessed the bombardment of Fort McHenry by
 
 
-var fakeDiv1 = document.createElement("div"); fakeDiv1 = document.createElement("div");
-var inviText1 = document.createTextNode(""); fakeDiv .createElement("div");
-var inviText1 = document.createTextNode("");
-inviDiv1.appendChild(inviText1);
+// British ships of the Royal Navy
 
-var inviDiv2 = document.createElement("div");
-var inviText2 = document.createTextNode("");
-inviDiv2.appendChild(inviText2);
 
-inviDiv1.style.display = "none";
-inviDiv2.style.display = "none";
+//in Outer Baltimore Harbor in the Patapsco River during the Battle of Baltimore in the War of 1812. Key was inspir
+//ed by the large U.S. flag, with 15 stars and 15 stripes, known as the Star-Span
++
 
-document.body.appendChild(inviDiv1);
-document.body.appendChild(inviDiv2);
+
+//gled Banner, flying triumphantly above the fort during the U.S. victory
+//-------------------------------------------------------
+//on September 14, 1814, after he witnessed the bombardment of Fort McHenry by
+
+// British ships of the Royal Navy
+//in Outer Baltimore Harbor in the Patapsco River during the Battle of Baltimore in the War of 1812. Key was inspir
+
+//ed by the large U.S. flag, with 15 stars and 15 stripes, known as the Star-Span
+
+//gled Banner, flying triumphantly above the fort during the U.S. victory
+
+
+//on September 14, 1814, after he witnessed the bombardment of Fort McHenry by
+// British ships of the Royal Navy
+//in Outer Baltimore Harbor in the Patapsco River during the Battle of Baltimore in the War of 1812. Key was inspir
+//ed by the large U.S. flag, with 15 stars and 15 stripes, known as the Star-Span
+//gled Banner, flying triumphantly above the fort during the U.S. victory
+//-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 
 
