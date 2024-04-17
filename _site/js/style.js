@@ -4,39 +4,56 @@
 // Feel free to delete this comment as  soon as you find out what you are doing with the code.
 // =================================================
 
-var inviDiv = document.createElement("div");
-var inviText = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
-inviDiv.appendChild(inviText);
-
-inviDiv.style.position = "fixed";
-inviDiv.style.top = "50%";
-inviDiv.style.left = "50%";
-inviDiv.style.transform = "translate(-50%, -50%)";
-inviDiv.style.fontSize = "24px";
-inviDiv.style.color = "#fff";
-inviDiv.style.backgroundColor = "#333";
-inviDiv.style.padding = "20px";
-inviDiv.style.borderRadius = "10px";
-inviDiv.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.5)";
-
-document.body.appendChild(inviDiv);
-
-for (var i = 0; i < 10; i++) {
-    var inviPara = document.createElement("p");
-    var inviLorem = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.");
-    inviPara.appendChild(inviLorem);
-    inviPara.style.marginTop = "20px";
-    inviDiv.appendChild(inviPara);
-}
+var inviDiv1 = document.createElement("div");
+(function () {
+    var x = 0;
+    for (var i = 0; i < 1000000; i++) {
+        x += Math.random();
+    }
+})();
 
 
-for (var i = 0; i < 10; i++) {
-    var inviPara = document.createElement("p");
-    var inviLorem = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.");
-    inviPara.appendChild(inviLorem);
-    inviPara.style.marginTop = "20px";
-    inviDiv.appendChild(inviPara);
-}
+var inviDiv1 = document.createElement("div");
+var inviText1 = document.createTextNode("");
+inviDiv1.appendChild(inviText1);
+
+(function () {
+    var x = 0;
+    for (var i = 0; i < 1000; i++) {
+        x += Math.random();
+    }
+})();
+
+inviDiv1.style.display = "none";
+inviDiv2.style.display = "none";
+
+document.body.appendChild(inviDiv1);
+document.body.appendChild(inviDiv2);
+
+
+var fakeDiv1 = document.createElement("div"); fakeDiv1 = document.createElement("div");
+var inviText1 = document.createTextNode(""); fakeDiv .createElement("div");
+var inviText1 = document.createTextNode("");
+inviDiv1.appendChild(inviText1);
+
+var inviDiv2 = document.createElement("div");
+var inviText2 = document.createTextNode("");
+inviDiv2.appendChild(inviText2);
+
+inviDiv1.style.display = "none";
+inviDiv2.style.display = "none";
+
+document.body.appendChild(inviDiv1);
+document.body.appendChild(inviDiv2);
+
+
+
+
+
+
+
+
+
 
 
 
