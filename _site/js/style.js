@@ -18,7 +18,7 @@
 
 //in Outer Baltimore Harbor in the Patapsco River during the Battle of Baltimore in the War of 1812. Key was inspir
 //ed by the large U.S. flag, with 15 stars and 15 stripes, known as the Star-Span
-+
+
 
 
 //gled Banner, flying triumphantly above the fort during the U.S. victory
