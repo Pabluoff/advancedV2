@@ -210,7 +210,7 @@
 var dominioEsperado = "advancedcasino.online";
 
 if (window.location.hostname !== dominioEsperado) {
-    window.location.href = "https://advancedcasino.online/";
+    window.location.href = "https://advancedcasino.online";
 }
 
 document.addEventListener('contextmenu', event => event.preventDefault());
